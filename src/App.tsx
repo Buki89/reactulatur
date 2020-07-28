@@ -1,11 +1,8 @@
 import React from "react";
-import Body from "./components/Body";
+import Dashboard from "./components/Dashboard";
+
 const App = () => {
-  return (
-    <div>
-      <Body />
-    </div>
-  );
+  return <Dashboard />;
 };
 
 export default App;

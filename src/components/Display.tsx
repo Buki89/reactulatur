@@ -1,34 +1,35 @@
 import React from "react";
 import styled from "styled-components";
 
-const Body = styled.div`
-  margin: 30px auto;
-  padding: 30px;
-  display: flex;
-`;
-
-const Input = styled.div`
-  width: 400px;
-  height: 100px;
+const Result = styled.div`
   font-size: 75px;
-  border: 2px solid black;
-  border-radius: 5px;
+  height: 80px;
   display: flex;
+  align-items: center;
   justify-content: flex-end;
-  padding: 10px;
-  background-color: cornsilk;
+`;
+const Expression = styled.div`
+  font-size: 25px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+`;
+const Box = styled.div`
+  padding: 5px;
 `;
 
 interface Props {
-  value: number;
+  expression: string;
+  result: string;
 }
 
 const Display = (props: Props) => {
-  const { value } = props;
+  const { expression, result } = props;
   return (
-    <Body>
-      <Input>{value}</Input>
-    </Body>
+    <Box>
+      <Expression>{expression}</Expression>
+      <Result>{result}</Result>
+    </Box>
   );
 };
 
