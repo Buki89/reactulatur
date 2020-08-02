@@ -21,95 +21,121 @@ const Dashboard = () => {
     expression: "",
     wasCalculated: false,
   });
-  const [currentValue, setCurrentValue] = useState("");
-  const [previousValue, setPreviousValue] = useState("");
-  const [operand, setOperand] = useState("");
-  const [expression, setExpression] = useState("");
-  const [wasCalculated, setWasCalculated] = useState(false);
+
+  const {
+    currentValue,
+    previousValue,
+    expression,
+    wasCalculated,
+    operand,
+  } = state;
 
   const handleAddOperand = (val: string): void => {
     if (currentValue) {
-      setOperand(val);
-      setPreviousValue(currentValue);
-      setCurrentValue("");
-      setExpression(`${currentValue} ${val} `);
-      setWasCalculated(false);
+      setState({
+        ...state,
+        operand: val,
+        previousValue: currentValue,
+        currentValue: "",
+        expression: `${currentValue} ${val} `,
+        wasCalculated: false,
+      });
     }
   };
 
   const handleAddNumber = (number: string): void => {
     //erase result then add number
     if (currentValue && wasCalculated) {
-      setWasCalculated(false);
-      setCurrentValue(number);
+      setState({ ...state, wasCalculated: false, currentValue: number });
       //add number
     } else {
       if (currentValue === "0" && number !== ".") {
       } else {
-        setCurrentValue((currentValue) => currentValue + number);
+        setState({ ...state, currentValue: currentValue + number });
       }
     }
   };
 
   const handleResult = (): void => {
     if (previousValue && currentValue && operand) {
-      setWasCalculated(true);
-      setCurrentValue(makeResult(previousValue, currentValue, operand));
-      setOperand("");
-      setPreviousValue("");
-      setExpression(expression.concat(currentValue, " ="));
+      setState({
+        ...state,
+        wasCalculated: true,
+        currentValue: makeResult(previousValue, currentValue, operand),
+        operand: "",
+        previousValue: "",
+        expression: expression.concat(currentValue, " ="),
+      });
     }
   };
 
   const handleDeleteNumber = (): void => {
-    setCurrentValue(currentValue.slice(0, currentValue.length - 1));
+    setState({
+      ...state,
+      currentValue: currentValue.slice(0, currentValue.length - 1),
+    });
   };
 
   const handleClearCurrentValue = (): void => {
-    setCurrentValue("");
+    setState({ ...state, currentValue: "" });
   };
 
   const handleClearInputs = (): void => {
-    setCurrentValue("");
-    setPreviousValue("");
-    setOperand("");
-    setExpression("");
+    setState({
+      ...state,
+      currentValue: "",
+      previousValue: "",
+      operand: "",
+      expression: "",
+    });
   };
 
   const handleChangeSign = (): void => {
-    setCurrentValue((parseInt(currentValue) * -1).toString());
+    setState({
+      ...state,
+      currentValue: (parseInt(currentValue) * -1).toString(),
+    });
   };
 
   const handleAddComma = (comma: string): void => {
     if (currentValue && !/,/g.test(currentValue)) {
-      setCurrentValue(`${currentValue}${comma}`);
+      setState({ ...state, currentValue: `${currentValue}${comma}` });
     }
   };
 
   const handleSquareRoot = (operand: string): void => {
     if (currentValue) {
-      setExpression(`${operand}${currentValue}`);
-      setCurrentValue(Math.sqrt(parseFloat(currentValue)).toString());
-      setOperand("");
-      setWasCalculated(true);
+      setState({
+        ...state,
+        expression: `${operand}${currentValue}`,
+        currentValue: Math.sqrt(parseFloat(currentValue)).toString(),
+        operand: "",
+        wasCalculated: true,
+      });
     }
   };
 
   const handleSquare = (): void => {
     if (currentValue) {
-      setExpression(`${currentValue}²`);
-      setCurrentValue(Math.pow(parseFloat(currentValue), 2).toString());
-      setOperand("");
-      setWasCalculated(true);
+      setState({
+        ...state,
+        expression: `${currentValue}²`,
+        currentValue: Math.pow(parseFloat(currentValue), 2).toString(),
+        operand: "",
+        wasCalculated: true,
+      });
     }
   };
 
   const handleOneDividedbyX = (): void => {
     if (currentValue) {
-      setExpression(`1/${currentValue}`);
-      setCurrentValue((1 / parseFloat(currentValue)).toString());
-      setOperand("");
-      setWasCalculated(true);
+      setState({
+        ...state,
+        expression: `1/${currentValue}`,
+        currentValue: (1 / parseFloat(currentValue)).toString(),
+        operand: "",
+        wasCalculated: true,
+      });
     }
   };
 
