@@ -34,3 +34,10 @@ export const makeResult = (
   }
   return "";
 };
+
+export const handleLargeNumber = (number: string): string => {
+  if (number.length > 12) {
+    return parseFloat(number).toExponential(6).toString();
+  }
+  return number;
+};

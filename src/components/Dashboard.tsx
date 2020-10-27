@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Display from "./Display";
 import Buttons from "./Buttons";
-import { makeResult, operandKeyCodes } from "../lib/helper";
+import { makeResult, operandKeyCodes, handleLargeNumber } from "../lib/helper";
 import { Frame, Box, Row } from "../styles/dashboard";
 import {
   TiPlus,
@@ -13,7 +13,6 @@ import {
 import { FaSquareRootAlt, FaPercent } from "react-icons/fa";
 
 const Dashboard = () => {
-  // TODO: Refactor
   const [state, setState] = useState({
     currentValue: "",
     previousValue: "",
@@ -30,14 +29,14 @@ const Dashboard = () => {
     operand,
   } = state;
 
-  const handleAddOperand = (val: string): void => {
+  const handleAddOperand = (operand: string): void => {
     if (currentValue) {
       setState({
         ...state,
-        operand: val,
+        operand: operand,
         previousValue: currentValue,
         currentValue: "",
-        expression: `${currentValue} ${val} `,
+        expression: `${handleLargeNumber(currentValue)} ${operand} `,
         wasCalculated: false,
       });
     }
@@ -64,7 +63,7 @@ const Dashboard = () => {
         currentValue: makeResult(previousValue, currentValue, operand),
         operand: "",
         previousValue: "",
-        expression: expression.concat(currentValue, " ="),
+        expression: expression.concat(handleLargeNumber(currentValue), " ="),
       });
     }
   };
@@ -107,7 +106,7 @@ const Dashboard = () => {
     if (currentValue) {
       setState({
         ...state,
-        expression: `${operand}${currentValue}`,
+        expression: `${operand}${handleLargeNumber(currentValue)}`,
         currentValue: Math.sqrt(parseFloat(currentValue)).toString(),
         operand: "",
         wasCalculated: true,
@@ -131,20 +130,13 @@ const Dashboard = () => {
     if (currentValue) {
       setState({
         ...state,
-        expression: `1/${currentValue}`,
+        expression: `1/${handleLargeNumber(currentValue)}`,
         currentValue: (1 / parseFloat(currentValue)).toString(),
         operand: "",
         wasCalculated: true,
       });
     }
   };
-
-  // useEffect(() => {
-  //   console.log("currentValue : " + currentValue);
-  //   console.log("previousValue : " + previousValue);
-  //   console.log("operand : " + operand);
-  //   console.log("wasCalculated : " + wasCalculated);
-  // }, [currentValue, operand, previousValue, wasCalculated]);
 
   // TODO: Refactor
   useEffect(() => {
@@ -159,7 +151,7 @@ const Dashboard = () => {
       if (keyCode === 13) {
         handleResult();
       }
-      if (keyCode === 110) {
+      if (keyCode === 110 || keyCode === 188) {
         handleAddComma(".");
       }
       if (keyCode === 8) {

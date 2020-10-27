@@ -1,7 +1,11 @@
 import styled from "styled-components";
 
-export const Result = styled.div`
-  font-size: 65px;
+interface ResultProps {
+  textLength: number;
+}
+
+export const Result = styled.div<ResultProps>`
+  font-size: ${({ textLength }) => (textLength > 12 ? "45px" : "55px")};
   height: 80px;
   display: flex;
   align-items: center;
