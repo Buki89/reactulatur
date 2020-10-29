@@ -1,0 +1,406 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly when there are no items 1`] = `
+<div
+  className="sc-eCApGN fcrIVV"
+>
+  <div
+    className="sc-dlnjPT bwAvQY"
+  >
+    <div
+      className="sc-gtssRu ljBYbT"
+    >
+      
+    </div>
+    <div
+      className="sc-bdnylx bbYWlV"
+      textLength={0}
+    >
+      
+    </div>
+  </div>
+  <div
+    className="sc-gKAblj dRVNLK"
+  >
+    <div
+      className="sc-jSFkmK iROnDn"
+    >
+      <div
+        className="sc-hKFyIo ivYjNO"
+        onClick={[Function]}
+        value="%"
+      >
+        <div>
+          <svg
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            strokeWidth="0"
+            style={
+              Object {
+                "color": undefined,
+              }
+            }
+            viewBox="0 0 448 512"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M112 224c61.9 0 112-50.1 112-112S173.9 0 112 0 0 50.1 0 112s50.1 112 112 112zm0-160c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48 21.5-48 48-48zm224 224c-61.9 0-112 50.1-112 112s50.1 112 112 112 112-50.1 112-112-50.1-112-112-112zm0 160c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48zM392.3.2l31.6-.1c19.4-.1 30.9 21.8 19.7 37.8L77.4 501.6a23.95 23.95 0 0 1-19.6 10.2l-33.4.1c-19.5 0-30.9-21.9-19.7-37.8l368-463.7C377.2 4 384.5.2 392.3.2z"
+            />
+          </svg>
+        </div>
+      </div>
+      <div
+        className="sc-hKFyIo ivYjNO"
+        onClick={[Function]}
+        value="CE"
+      >
+        <div>
+          CE
+        </div>
+      </div>
+      <div
+        className="sc-hKFyIo ivYjNO"
+        onClick={[Function]}
+        value="C"
+      >
+        <div>
+          C
+        </div>
+      </div>
+      <div
+        className="sc-hKFyIo ivYjNO"
+        onClick={[Function]}
+        value="←"
+      >
+        <div>
+          <svg
+            baseProfile="tiny"
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            strokeWidth="0"
+            style={
+              Object {
+                "color": undefined,
+              }
+            }
+            version="1.2"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M19.5 5h-10c-1.266 0-2.834.807-3.57 1.837l-2.61 3.653-1.199 1.679c-.121.175-.122.492.003.664l1.188 1.664 2.619 3.667c.735 1.029 2.302 1.836 3.569 1.836h10c1.379 0 2.5-1.122 2.5-2.5v-10c0-1.378-1.121-2.5-2.5-2.5zm-2.293 9.793c.391.391.391 1.023 0 1.414-.195.195-.451.293-.707.293s-.512-.098-.707-.293l-2.293-2.293-2.293 2.293c-.195.195-.451.293-.707.293s-.512-.098-.707-.293c-.391-.391-.391-1.023 0-1.414l2.293-2.293-2.293-2.293c-.391-.391-.391-1.023 0-1.414s1.023-.391 1.414 0l2.293 2.293 2.293-2.293c.391-.391 1.023-.391 1.414 0s.391 1.023 0 1.414l-2.293 2.293 2.293 2.293z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div
+      className="sc-jSFkmK iROnDn"
+    >
+      <div
+        className="sc-hKFyIo ivYjNO"
+        onClick={[Function]}
+        value="1/x"
+      >
+        <div>
+          1/x
+        </div>
+      </div>
+      <div
+        className="sc-hKFyIo ivYjNO"
+        onClick={[Function]}
+        value="x²"
+      >
+        <div>
+          x²
+        </div>
+      </div>
+      <div
+        className="sc-hKFyIo ivYjNO"
+        onClick={[Function]}
+        value="√"
+      >
+        <div>
+          <svg
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            strokeWidth="0"
+            style={
+              Object {
+                "color": undefined,
+              }
+            }
+            viewBox="0 0 576 512"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M571.31 251.31l-22.62-22.62c-6.25-6.25-16.38-6.25-22.63 0L480 274.75l-46.06-46.06c-6.25-6.25-16.38-6.25-22.63 0l-22.62 22.62c-6.25 6.25-6.25 16.38 0 22.63L434.75 320l-46.06 46.06c-6.25 6.25-6.25 16.38 0 22.63l22.62 22.62c6.25 6.25 16.38 6.25 22.63 0L480 365.25l46.06 46.06c6.25 6.25 16.38 6.25 22.63 0l22.62-22.62c6.25-6.25 6.25-16.38 0-22.63L525.25 320l46.06-46.06c6.25-6.25 6.25-16.38 0-22.63zM552 0H307.65c-14.54 0-27.26 9.8-30.95 23.87l-84.79 322.8-58.41-106.1A32.008 32.008 0 0 0 105.47 224H24c-13.25 0-24 10.74-24 24v48c0 13.25 10.75 24 24 24h43.62l88.88 163.73C168.99 503.5 186.3 512 204.94 512c17.27 0 44.44-9 54.28-41.48L357.03 96H552c13.25 0 24-10.75 24-24V24c0-13.26-10.75-24-24-24z"
+            />
+          </svg>
+        </div>
+      </div>
+      <div
+        className="sc-hKFyIo ivYjNO"
+        onClick={[Function]}
+        value="/"
+      >
+        <div>
+          <svg
+            baseProfile="tiny"
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            strokeWidth="0"
+            style={
+              Object {
+                "color": undefined,
+              }
+            }
+            version="1.2"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="12"
+              cy="6"
+              r="2.25"
+            />
+            <circle
+              cx="12"
+              cy="18"
+              r="2.25"
+            />
+            <path
+              d="M18 10h-12c-1.104 0-2 .896-2 2s.896 2 2 2h12c1.104 0 2-.896 2-2s-.896-2-2-2z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div
+      className="sc-jSFkmK iROnDn"
+    >
+      <div
+        className="sc-hKFyIo ivYjNO"
+        onClick={[Function]}
+        value="7"
+      >
+        <div>
+          7
+        </div>
+      </div>
+      <div
+        className="sc-hKFyIo ivYjNO"
+        onClick={[Function]}
+        value="8"
+      >
+        <div>
+          8
+        </div>
+      </div>
+      <div
+        className="sc-hKFyIo ivYjNO"
+        onClick={[Function]}
+        value="9"
+      >
+        <div>
+          9
+        </div>
+      </div>
+      <div
+        className="sc-hKFyIo ivYjNO"
+        onClick={[Function]}
+        value="*"
+      >
+        <div>
+          <svg
+            baseProfile="tiny"
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            strokeWidth="0"
+            style={
+              Object {
+                "color": undefined,
+              }
+            }
+            version="1.2"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M17.414 6.586c-.78-.781-2.048-.781-2.828 0l-2.586 2.586-2.586-2.586c-.78-.781-2.048-.781-2.828 0-.781.781-.781 2.047 0 2.828l2.585 2.586-2.585 2.586c-.781.781-.781 2.047 0 2.828.39.391.902.586 1.414.586s1.024-.195 1.414-.586l2.586-2.586 2.586 2.586c.39.391.902.586 1.414.586s1.024-.195 1.414-.586c.781-.781.781-2.047 0-2.828l-2.585-2.586 2.585-2.586c.781-.781.781-2.047 0-2.828z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div
+      className="sc-jSFkmK iROnDn"
+    >
+      <div
+        className="sc-hKFyIo ivYjNO"
+        onClick={[Function]}
+        value="4"
+      >
+        <div>
+          4
+        </div>
+      </div>
+      <div
+        className="sc-hKFyIo ivYjNO"
+        onClick={[Function]}
+        value="5"
+      >
+        <div>
+          5
+        </div>
+      </div>
+      <div
+        className="sc-hKFyIo ivYjNO"
+        onClick={[Function]}
+        value="6"
+      >
+        <div>
+          6
+        </div>
+      </div>
+      <div
+        className="sc-hKFyIo ivYjNO"
+        onClick={[Function]}
+        value="-"
+      >
+        <div>
+          <svg
+            baseProfile="tiny"
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            strokeWidth="0"
+            style={
+              Object {
+                "color": undefined,
+              }
+            }
+            version="1.2"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M18 11h-12c-1.104 0-2 .896-2 2s.896 2 2 2h12c1.104 0 2-.896 2-2s-.896-2-2-2z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div
+      className="sc-jSFkmK iROnDn"
+    >
+      <div
+        className="sc-hKFyIo ivYjNO"
+        onClick={[Function]}
+        value="1"
+      >
+        <div>
+          1
+        </div>
+      </div>
+      <div
+        className="sc-hKFyIo ivYjNO"
+        onClick={[Function]}
+        value="2"
+      >
+        <div>
+          2
+        </div>
+      </div>
+      <div
+        className="sc-hKFyIo ivYjNO"
+        onClick={[Function]}
+        value="3"
+      >
+        <div>
+          3
+        </div>
+      </div>
+      <div
+        className="sc-hKFyIo ivYjNO"
+        onClick={[Function]}
+        value="+"
+      >
+        <div>
+          <svg
+            baseProfile="tiny"
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            strokeWidth="0"
+            style={
+              Object {
+                "color": undefined,
+              }
+            }
+            version="1.2"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M18 10h-4v-4c0-1.104-.896-2-2-2s-2 .896-2 2l.071 4h-4.071c-1.104 0-2 .896-2 2s.896 2 2 2l4.071-.071-.071 4.071c0 1.104.896 2 2 2s2-.896 2-2v-4.071l4 .071c1.104 0 2-.896 2-2s-.896-2-2-2z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div
+      className="sc-jSFkmK iROnDn"
+    >
+      <div
+        className="sc-hKFyIo ivYjNO"
+        onClick={[Function]}
+        value="±"
+      >
+        <div>
+          ±
+        </div>
+      </div>
+      <div
+        className="sc-hKFyIo ivYjNO"
+        onClick={[Function]}
+        value="0"
+      >
+        <div>
+          0
+        </div>
+      </div>
+      <div
+        className="sc-hKFyIo ivYjNO"
+        onClick={[Function]}
+        value="."
+      >
+        <div>
+          ,
+        </div>
+      </div>
+      <div
+        className="sc-hKFyIo byLpTS"
+        onClick={[Function]}
+        value="="
+      >
+        <div>
+          =
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
