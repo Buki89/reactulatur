@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly when there are no items 1`] = `
+<div
+  className="sc-dlnjPT bwAvQY"
+>
+  <div
+    className="sc-gtssRu ljBYbT"
+  >
+    
+  </div>
+  <div
+    className="sc-bdnylx bbYWlV"
+    textLength={0}
+  >
+    
+  </div>
+</div>
+`;
