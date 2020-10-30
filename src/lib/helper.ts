@@ -1,12 +1,13 @@
 export enum Operand {
   plus = "+",
   minus = "-",
-  multiPly = "*",
+  multiply = "*",
   divide = "/",
   exp = "xⁿ",
   sqrt = "√",
   del = "←",
   negation = "±",
+  empty = "",
 }
 
 export const operandKeyCodes = [106, 107, 109, 111];
@@ -14,7 +15,7 @@ export const operandKeyCodes = [106, 107, 109, 111];
 export const makeResult = (
   first: string,
   second: string,
-  operand: string
+  operand: Operand
 ): string => {
   const firstNumber = parseFloat(first);
   const secondNumber = parseFloat(second);
@@ -23,16 +24,16 @@ export const makeResult = (
       return (firstNumber + secondNumber).toString();
     case Operand.minus:
       return (firstNumber - secondNumber).toString();
-    case Operand.multiPly:
+    case Operand.multiply:
       return (firstNumber * secondNumber).toString();
     case Operand.divide:
       return (firstNumber / secondNumber).toString();
     case Operand.exp:
       return Math.pow(firstNumber, secondNumber).toString();
+    default:
     case Operand.sqrt:
       return Math.sqrt(firstNumber).toFixed(5).toString();
   }
-  return "";
 };
 
 export const handleLargeNumber = (number: string): string => {
