@@ -1,25 +1,19 @@
 import React from "react";
-import Button from "./Button";
-
-interface attr {
-  symbol?: string | any;
-  value: string;
-  handleClick: (arg: string) => void;
-}
+import Button, { ButtonProps } from "./Button";
 
 interface Props {
-  buttonAttr: Array<attr>;
+  buttons: Array<ButtonProps>;
 }
 
 const Buttons = (props: Props) => {
   return (
     <>
-      {props.buttonAttr.map((attributes: attr, index: number) => (
+      {props.buttons.map((button: ButtonProps, index: number) => (
         <Button
           key={index}
-          handleClick={attributes.handleClick}
-          value={attributes.value}
-          symbol={attributes.symbol ? attributes.symbol : attributes.value}
+          handleClick={button.handleClick}
+          value={button.value}
+          symbol={button.symbol ? button.symbol : button.value}
         />
       ))}
     </>

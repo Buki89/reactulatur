@@ -1,18 +1,19 @@
-import React, { SyntheticEvent } from "react";
+import React from "react";
 import { Body } from "../styles/button";
+import { Operand } from "../lib/helper";
 
-interface Props {
-  value: string;
-  handleClick: any;
-  symbol: any;
+type CalculatorValue = string | Operand;
+
+export interface ButtonProps {
+  value: CalculatorValue;
+  handleClick: (value: any) => void;
+  symbol?: JSX.Element | string | undefined;
 }
 
-const Button = (props: Props) => {
+const Button = (props: ButtonProps) => {
   return (
-    <Body
-      value={props.value}
-      onClick={(e: SyntheticEvent) => props.handleClick(props.value)}
-    >
+    //<Body value={props.value} onClick={() => props.handleClick(props.value)}>
+    <Body value={props.value} onClick={() => props.handleClick(props.value)}>
       <div>{props.symbol}</div>
     </Body>
   );
